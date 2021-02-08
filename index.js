@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 require ('dotenv').config();
 const bodyParser = require('body-parser');
 const tableBook = require('./routes/tableBook');
+const itemMenu = require('./routes/itemMenu');
 const app = express();
 app.use(bodyParser.json());
 
@@ -18,3 +19,4 @@ app.listen(process.env.PORT, () =>{
     console.log(`Server running at ${process.env.PORT}`)
 });
 app.use('/', tableBook);
+app.use('/', itemMenu);
