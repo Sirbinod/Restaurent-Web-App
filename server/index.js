@@ -4,7 +4,7 @@ require("dotenv").config();
 const bodyParser = require("body-parser");
 const tableBook = require("./routes/tableBook");
 const itemMenu = require("./routes/itemMenu");
-const user = require("./routes/user");
+const auth = require("./routes/auth");
 const app = express();
 const morgan = require("morgan");
 const cookieParser = require("cookie-parser");
@@ -35,4 +35,4 @@ app.listen(process.env.PORT, () => {
 //router middleware
 app.use("/", tableBook);
 app.use("/", itemMenu);
-app.use("/", user);
+app.use("/", auth);
