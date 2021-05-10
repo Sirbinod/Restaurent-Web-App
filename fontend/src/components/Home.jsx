@@ -5,8 +5,8 @@ const Home = () => {
     return (
         <div >
             <img  src="https://www.istockphoto.com/resources/images/HomePage/Hero/1204187820.jpg" alt="cover"/>
-            <div className="item">
-                <div>
+            <div className="item d-flex container-md">
+                <div className="mr-5 ml-5">
                 <Button color="primary">Book</Button>
                 </div>
                 <div>

@@ -4,7 +4,7 @@ import { Form , FormGroup, Label, Input,Button} from 'reactstrap'
 
 const Signin = () => {
     return (
-        <div className="form">
+        <div className="form container-md">
             <h1 className="megin">Signin</h1>
             <h1 className="megon">---------------------------------</h1>
             <Form>
